@@ -191,18 +191,16 @@ img
   border-radius: 5px;
 }
 
-.container .toggle
+.toggle
 {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  width: 11vw;
+  margin-bottom: 10px;
+  width: 19vw;
   height: 7vh;
   max-height: 50px;
   min-height: 50px;
   opacity: 60%;
-  background-color: #555;
-  color: white;
+  color: #555;
+  background-color: white;
   font-size: 2vw;
   padding: 8px 16px;
   border: none;
@@ -216,10 +214,15 @@ img
     {
         display: none;
     }    
+    
 }
 @media(max-width:1024px) and (min-width:481px)
 {
   h3
+    {
+      display: none;
+    }
+    .toggle
     {
       display: none;
     }
@@ -237,5 +240,9 @@ img
     .container.MediumTom
     {
         width: 130vw;
+    }
+    .toggle
+    {
+      display: none;
     }
 }

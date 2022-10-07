@@ -7,7 +7,38 @@ let  mt = document.querySelector(".MediumTom")
 let  r = document.querySelector(".Ride")
 let  s = document.querySelector(".Snare")
 let sticks = document.querySelector(".sticks")
-let bod = document.querySelector("body")
+let rem = document.querySelector(".toggle")
+let vis = 0
+rem.addEventListener("click", () =>
+{
+    if(vis === 0)
+    {
+        rem.innerHTML = "Show buttons";
+        c.style.display = "none";
+        bd.style.display = "none";
+        ft.style.display = "none";
+        hh.style.display = "none";
+        ht.style.display = "none";
+        mt.style.display = "none";
+        r.style.display = "none";
+        s.style.display = "none";
+        vis = 1;
+    }
+    else
+    {
+        rem.innerHTML = "Remove buttons";
+        c.style.display = "block";
+        bd.style.display = "block";
+        ft.style.display = "block";
+        hh.style.display = "block";
+        ht.style.display = "block";
+        mt.style.display = "block";
+        r.style.display = "block";
+        s.style.display = "block";
+        vis = 0;
+    }
+})
+
 
 bd.addEventListener("click", () =>
 {
