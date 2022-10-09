@@ -162,7 +162,7 @@ document.addEventListener("keyup", (event) =>
         sticks.style.transform= "rotate(280deg)";
         sticks.style.top=23 + "%";  
         sticks.style.left=62 + "%";
-        let audio = new Audio('assets/bass-drum.wav');
+        let audio = new Audio('assets/snare-drum.wav');
         audio.play();
     }
 });
